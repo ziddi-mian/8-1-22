@@ -1269,6 +1269,23 @@ console.log(diff_months(dt1, dt2));
 
 
 
+// Write a JavaScript function to get the week start date.  
+
+function startOfWeek(date)
+  {
+    var diff = date.getDate() - date.getDay() + (date.getDay() === 0 ? -6 : 1);
+  
+    return new Date(date.setDate(diff));
+ 
+  }
+
+dt = new Date(); 
+
+console.log(startOfWeek(dt).toString());
+
+
+
+
 
 
 // Write a JavaScript function to get time differences in years between two dates.   
